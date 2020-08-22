@@ -13,4 +13,4 @@ steps:
 images:
 - 'gcr.io/$PROJECT_ID/desafio_k8s_golang:latest'
 - 'gcr.io/$PROJECT_ID/desafio_k8s_golang:${_DESAFIO_K8S_GOLANG_VERSION}'
-tags: ['cloud-builders-desafio-ci-golang']
+tags: ['cloud-builders-desafio-k8s-golang']

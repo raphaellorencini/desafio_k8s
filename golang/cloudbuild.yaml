@@ -3,7 +3,7 @@ substitutions:
 steps:
 - id: "Build da imagem"
   name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/$PROJECT_ID/desafio_k8s_golang:latest', '-t', 'gcr.io/$PROJECT_ID/desafio_k8s_golang:${_DESAFIO_K8S_GOLANG_VERSION}', '-f-', 'golang', '.']
+  args: ['build', '-t', 'gcr.io/$PROJECT_ID/desafio_k8s_golang:latest', '-t', 'gcr.io/$PROJECT_ID/desafio_k8s_golang:${_DESAFIO_K8S_GOLANG_VERSION}', '-f-', 'golang/Dockerfile']
 
 - id: "Rodando o teste da função greetings"
   name: 'gcr.io/cloud-builders/docker'

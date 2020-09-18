@@ -1,5 +1,5 @@
 substitutions:
-  _DESAFIO_K8S_GOLANG_VERSION: "1.$SHORT_SHA"
+  _DESAFIO_K8S_GOLANG_VERSION: "1.${SHORT_SHA}"
 steps:
 - id: "Build da imagem"
   name: 'gcr.io/cloud-builders/docker'
